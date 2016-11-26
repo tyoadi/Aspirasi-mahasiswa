@@ -1,0 +1,240 @@
+
+<!-- The main content view -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:text="University Aspiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo_amikom"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView2"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainFragmentButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerFirstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/baakBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/baakImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/baakText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/baakImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="BAAK"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dosenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/dosenImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/dosenText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dosenImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="DOSEN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerSecondRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/jurusanBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/jurusanImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/jurusanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jurusanImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="JURUSAN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forumBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/forumImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/forumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forumImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="FORUM"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerThirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/lembagaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/lembagaImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/lembagaTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lembagaImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="LEMBAGA"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/himpunanBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pink_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/himpunanImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_account" />
+
+                <TextView
+                    android:id="@+id/himounanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/himpunanImg"
+                    android:layout_centerHorizontal="true"
+                    android:text="HIMPUNAN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
